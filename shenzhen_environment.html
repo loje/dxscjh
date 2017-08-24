@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>创业深圳</title>
+
+		<link href="css/shenzhen.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+ 
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+		<![endif]-->
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+
+
+
+    <style> 
+        .loadpagediv { 
+            display:none; 
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 90%;
+			text-align: center;
+			background-color: #fff;
+			color: #ccc;
+			min-height: 60px;
+        } 
+
+		.loadpagediv span {
+			width: auto;
+			background-color: #333;
+			padding: 20px;
+			border-radius: 6px;
+			border-top:1px solid #666;
+			color: #fff;
+			box-shadow: 0px 0px 30px #999;
+		}
+		.loadpagediv span img{
+			margin-right: 10px;
+		}
+    </style> 
+    <script> 
+        var id = setTimeout('loadPage()',100); 
+        function loadPage() { 
+            // 取得文档载入状态，如果载入完成，则readystate='complete' 
+            // 根据这个可以定时去获取文档载入状态，来实现页面载入等待效果 
+            var readystate = document.readyState.toLowerCase(); 
+            if (readystate == 'complete') 
+            { 
+                clearTimeout(id); 
+                document.getElementById('loadpagediv').style.display =  "none"; 
+
+            } 
+            else { 
+                document.getElementById('loadpagediv').style.display =  "block"; 
+                id = setTimeout('loadPage()',100); 
+            } 
+ 
+        } 
+    </script> 
+	</head>
+<body style="zoom: 1;" ryt13132="1">
+	<nav class="navbar navbar-default">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><i class="iconfont">&#xe601;</i></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="service_index.html">创业服务</a></li>
+					<li><a href="group_index.html">创业圈子</a></li>
+					<li><a href="college_index.html">创业学院</a></li>
+					<li><a href="studio_index.html">创客之家</a></li>
+					<li><a href="meeting_index.html">创交会</a></li>
+					<!-- <li><a href="shenzhen_index.html">创业深圳</a></li> -->
+          <li><a href="login_index.html">会员中心</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-search" type="button"><i class="iconfont">&#xe603;</i></button>
+              </span>
+            </div><!-- /input-group -->
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="jumbotron shenzhen-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-ml-6">
+					<img src="images/shenzhen_people_img.png" class="shenzhen-people-img">
+				</div>
+				<div class="col-xs-6 col-sm-6 col-ml-6">
+					<div class="shenzhen-people-intro">
+						<h4><i class="web-font">深圳创业者的图文故事</i></h4>
+						<h2><i class="web-font">创业环境</i></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container shenzhen-environment masonry-container">
+    <div class="row shenzhen-memu">
+      <!-- Single button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        创业深圳 <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="shenzhen_index.html">杂草APP</a></li>
+          <li class="divider"></li>
+          <li><a href="shenzhen_pioneer.html">创业先驱</a></li>
+          <li><a href="shenzhen_environment.html">创业环境</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="loadpagediv" class="loadpagediv"> 
+    	<span><img src="images/loading.gif">正在加载内容……
+    </div>
+    <div id="masonry" class="container-fluid">  
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s1.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s2.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s3.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s4.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s5.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s6.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s7.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s8.png">
+        </a>
+      </div>
+      <div class="box">
+        <a href="#">
+          <p>OpenPOWER 基金会科技领袖展示全新硬件解决方案，提供服务器新选择</p>
+          <img src="images/s9.png">
+        </a>
+      </div>
+
+    </div> 
+
+
+		<footer>Copyright©2015 SHENZHEN QFH CO.| 粤ICP备15013741号-4
+		</footer>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stickUp.min.js"></script>
+            <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar').stickUp();
+                });
+              });
+
+
+             $(function(){  
+                 var $container = $('#masonry');  
+                 $container.imagesLoaded( function(){  
+                     $container.masonry({  
+                         itemSelector : '.box',  
+                         gutterWidth : 20,  
+                         isAnimated: true,  
+                     });  
+                 });  
+             }); 
+
+            </script>
+
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/imagesLoaded.js"></script>
+  <script type="text/javascript" src="http://libs.useso.com/js/masonry/3.1.5/masonry.pkgd.min.js"></script>
+  </body>
+</html>

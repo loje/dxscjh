@@ -1,0 +1,733 @@
+/*开源字体*/
+@font-face {font-family: 'webfontcn';
+    src: url('../fonts/webfont.eot'); /* IE9*/
+    src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font{
+    font-family:"webfontcn" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/*开源字体结束*/
+
+/*开源矢量图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*开源矢量图标结束*/
+
+body{
+  font-family: "webfontcn";
+}
+
+.container{
+  margin-top: 0px !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.body-bg{
+  background-image: url(../images/world_background.jpg); background-position: center 0;
+}
+
+.btn-search {
+  color: #fff;
+  background-image: url(../images/50_search-bg.png);
+  
+  border-color: #ccc;
+}
+
+.banner-title{
+	position: absolute;
+	bottom: 10px;
+	padding: 5px;
+	/*width: 470px;*/
+	height: 110px;
+	background-image: url(../images/75_bg.png);
+}
+	.banner-title h3{
+		color: #CC9966;
+		letter-spacing:5px;
+	}
+	.banner-title h5{
+		color: #A0A0A0;
+	}
+.message{
+	padding: 12px 0 0px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #A0A0A0;
+}
+
+/*banner部分*/
+.college-top{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.college-banner{
+  width: 100%;
+  height: 340px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  background-image: url(../images/group_banner.jpg) !important;
+}
+.college-data{
+  padding-top: 40px;
+  width: 100%;
+  height: 340px;
+  border-radius: 8px;
+  background-color: #4A4A4A;
+}
+
+/*banner部分结束*/
+
+/*二级导航*/
+.college-navbar{
+  margin-bottom: 20px;
+  min-height: 40px;
+  border-radius: 8px;
+  background-color: #4A90E2;
+}
+.college-navbar .col-md-6 .dropdown button,.college-navbar .col-md-1 .dropdown button{
+  min-height: 40px;
+}
+.college-navbar .col-md-6 .dropdown button,.college-navbar .col-md-1 .dropdown button i{
+  font-size: 14px;
+}
+.college-navbar-btn-default{
+  background-color: transparent;
+  border:none;
+  color: #fff;
+}
+.college-navbar-btn-default:focus,.college-navbar-btn-default:hover{
+  color: #fff !important;
+  background-color: #3B75B8;
+  border-radius: 0px;
+}
+.college-navbar  ul.dropdown-menu{
+  min-width:initial;
+  background-image: none ;
+  background-color: #333 ;
+}
+.college-navbar  ul.dropdown-menu a{
+  color: #fff;
+}
+.college-navbar  ul.dropdown-menu a:hover,.college-navbar  ul.dropdown-menu a:focus{
+  background-color: #3B75B8;
+  color: #fff;
+}
+
+.college-dropdown-left{
+  float: left;
+  margin-left: 10px;
+}
+.college-dropdown-right{
+  float: right;
+  margin-right: 10px;
+}
+  .college-dropdown-left button,.college-dropdown-right button{
+    min-height: 40px;
+  }
+
+  .college-btn-default{
+    color: #fff;
+    background-color: transparent;
+    border:none;
+  }
+  .college-btn-default:hover{
+    background-color: #3B75B8;
+    border-radius:0 !important;
+    color: #fff !important;
+  }
+/*二级导航结束*/
+
+/*活动列表*/
+.college-huodong-list{
+  margin-bottom: 20px;
+}
+@media (min-width: 768px){
+  .college-index .col-md-8 .college-huodong-list {
+    height: 220px;
+    }
+  .college-index  .col-md-8 .thumbnail {
+    width: 100% !important;
+    height: 222px;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: #F6F6F6;
+    border: 1px solid #E3E3E3;
+  }
+  .college-index  .col-md-8 .thumbnail .caption{
+    position: relative;
+    height: 220px;
+  }
+  .college-index .col-md-8 .thumbnail img {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .college-index .col-md-8 .thumbnail .caption h3 {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .college-index .col-md-8 .thumbnail .caption p {
+    font-size: 12px;
+    color: #9B9B9B;
+    text-indent: 2em;
+  }
+  .college-index  .col-md-8 .thumbnail .caption .college-huodong-info{
+    position: absolute;
+    bottom: 10px;
+    left:230px;
+  }
+}
+
+.college-huodong-list a.thumbnail {
+  position: relative;
+}
+.college-huodong-list a.thumbnail .huodong-type {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  padding: 2px 4px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #4A90E2;
+}
+
+.college-huodong-list .thumbnail div.caption .college-huodong-info p {
+  margin: 10px 0 0 0;
+  text-indent: 0em;
+}
+.college-huodong-list .thumbnail div.caption .college-huodong-info p i {
+  font-size: 12px;
+}
+/*活动列表结束*/
+
+/*学院边栏*/
+.college-index-sidebar .page-header {
+  margin: 0px;
+  padding-bottom: 0px;
+}
+.college-index-sidebar .page-header h5 {
+  color: #999;
+}
+.college-index-sidebar .page-header h5 a.more-college-video {
+  display: block;
+  float: right;
+  font-size: 14px;
+  color: #4A90E2;
+
+}
+.college-index-sidebar-list {
+  margin-bottom: 20px;
+  height: 80px;
+}
+.college-index-sidebar-list .thumbnail {
+  padding: 0px;
+  border: none;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+.college-index-sidebar-list .thumbnail .college-video-img{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background-image: url(../images/college-video-img.png);
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  background-size: 80px 80px;
+  z-index: 999999;
+}
+.college-index-sidebar-list .thumbnail img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 0px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 8px;
+}
+.college-index-sidebar-list .thumbnail .caption {
+  padding: 0px;
+}
+.college-index-sidebar-list .thumbnail .caption h6 {
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #202020;
+  font-size: 14px !important;
+}
+.college-index-sidebar-list .thumbnail .caption p{
+  font-size: 12px;
+  color: #9B9B9B;
+}
+/*学院边栏结束*/
+
+/*学院活动信息边栏*/
+.college-huodong-sidebar .page-header{
+  padding-bottom: 0px;
+  margin: 0px 0 20px;
+}
+.college-huodong-sidebar .college-huodong-sidebar-list{
+  margin-bottom: 20px;
+}
+.college-huodong-sidebar .college-huodong-sidebar-list h6{
+  margin-bottom: 10px;
+  line-height: 20px;
+  color: #000;
+}
+.college-huodong-sidebar .college-huodong-sidebar-list h6 i{
+  font-size: 12px;
+  color: #000;
+}
+.college-huodong-sidebar .college-huodong-sidebar-list p{
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+}
+
+.college-huodong-sidebar fieldset{
+  border-top:1px solid #eee; 
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.college-huodong-sidebar fieldset legend{
+  text-align: right;
+  border-bottom: none;
+  width: auto;
+}
+.college-huodong-sidebar .share-u,.college-huodong-sidebar .share-u a{
+  font-size: 12px;
+  color: #999;
+}
+.college-huodong-sidebar .share-u a i{
+  font-size: 18px;
+  color: #999;
+}
+.college-huodong-sidebar .share-u a{
+  cursor: pointer;
+}
+/*学院活动信息边栏结束*/
+
+/*学院活动详情页面*/
+.college-huodong-article-breadcrumb{
+  margin-top: 50px;
+}
+.college-huodong-article-breadcrumb ol.breadcrumb{
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 0px;
+}
+.college-huodong-article-breadcrumb ol.breadcrumb li{
+  font-size: 12px;
+}
+.college-huodong-article-breadcrumb ol.breadcrumb li a{
+  color: #9B9B9B;
+}
+@media (max-width: 768px){
+  p img{
+    max-width: 300px;
+  }
+}
+@media (min-width: 768px){
+  p img{
+    max-width: 400px;
+  }
+}
+.college-huodong-pager{
+  margin-top: 0px !important;
+}
+.college-huodong-article .page-header{
+  margin: 0px 0 20px;
+}
+.college-huodong-article .page-header h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.college-huodong-article p{
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 28px;
+  text-indent: 2em;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.group-item-sidebar .page-header{
+  margin:0px;
+  padding-bottom: 0px;
+}
+.group-item-sidebar .page-header h5{
+  color: #999;
+}
+
+.group-item-sidebar-list{
+  margin-bottom: 20px;
+  height: 80px;
+}
+.group-item-sidebar-list .thumbnail{
+  padding: 0px;
+  border:none;
+}
+.group-item-sidebar-list .thumbnail img{
+  width: 80px;
+  height: 80px;
+  margin-left: 0px;
+  margin-right: 5px;
+  float: left;
+  border-radius: 8px;
+}
+.group-item-sidebar-list .thumbnail .caption{
+  padding: 0px;
+}
+.group-item-sidebar-list .thumbnail .caption h6{
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/*学院活动结束*/
+
+/*学院教程列表视频*/
+.college-shipin-list-breadcrumb{
+  margin-top: 50px;
+}
+.college-shipin-list-breadcrumb ol.breadcrumb{
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 0px;
+}
+.college-shipin-list-breadcrumb ol.breadcrumb li{
+  font-size: 12px;
+}
+.college-shipin-list-breadcrumb ol.breadcrumb li a{
+  color: #9B9B9B;
+}
+
+.video-intro {
+  position: relative;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0px !important;
+}
+.college-video-list-img{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	border-radius: 8px;
+	background-image: url(../images/college-video-img.png);
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	z-index: 999999;
+}
+.video-intro img{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	border-radius: 8px;
+}
+
+.college-video-list-img{
+	width: 213px;
+	height: 213px;
+	background-size: 213px 213px;
+}
+
+.video-intro img{
+	width: 263px;
+	height: 263px;
+}
+
+.video-intro .caption h3{
+	margin-top: 0px;
+	height: 50px;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.video-intro .caption p{
+	height: 40px;
+	font-size: 12px;
+	color: #9B9B9B;
+}
+
+@media (max-width: 1199px){
+	.college-video-list-img{
+		width: 213px;
+		height: 213px;
+		background-size: 213px 213px;
+	}
+	.video-intro .caption{
+		width: 213px;
+	}
+		.video-intro .caption h3{
+			height: 30px;
+			font-size: 14px;
+		}
+		.video-intro .caption p{
+			height: 20px;
+			font-size: 12px;
+		}
+	}
+@media (max-width: 991px){
+	.college-video-list-img{
+		width: 158px;
+		height: 158px;
+		background-size: 158px 158px;
+	}
+	.video-intro .caption{
+		width: 158px;
+	}
+		.video-intro .caption h3{
+			height: 28px;
+			font-size: 12px;
+		}
+		.video-intro .caption p{
+			height: 20px;
+			font-size: 12px;
+		}
+}
+@media (max-width: 767px){
+	.college-video-list-img{
+		width: 263px;
+		height: 263px;
+		background-size: 263px 263px;
+	}
+	.video-intro .caption{
+		width: 263px;
+	}
+		.video-intro .caption h3{
+			height: 28px;
+			font-size: 14px;
+		}
+		.video-intro .caption p{
+			height: 20px;
+			font-size: 14px;
+		}
+}
+@media (max-width: 603px){
+	.college-video-list-img{
+		display: none;
+	}
+	.video-intro .caption{
+		width: auto;
+	}
+		.video-intro .caption h3{
+			height: 28px;
+			font-size: 12px;
+		}
+		.video-intro .caption p{
+			display: none;
+		}
+}
+/*学院教程视频列表结束*/
+
+/*学院教程视频详情*/
+@media (min-width: 992px){
+  .video-play{
+    margin-bottom: 42px;
+    padding-top: 42px;
+    max-height: 540px !important;
+    height: 540px !important;
+    background-image:none !important;
+  }
+  .video-player-box iframe {
+    top: 42px;
+  }
+}
+@media (max-width: 991px){
+  .video-play{
+    margin-bottom: 42px;
+    padding-top: 42px;
+    max-height: 460px !important;
+    height: 460px !important;
+    background-image:none !important;
+  }
+  .video-player-box iframe {
+    top: 42px;
+  }
+}
+@media (max-width: 768px){
+  .video-play{
+    margin-bottom: 50px;
+    padding-top: 50px;
+    max-height: 380px !important;
+    height: 380px !important;
+    background-image:none !important;
+  }
+  .video-player-box iframe {
+    top: 50px;
+  }
+}
+@media (max-width: 603px){
+  .video-play{
+    margin-bottom: 50px;
+    padding-top: 50px;
+    max-height: 300px !important;
+    height: 300px !important;
+    background-image:none !important;
+  }
+  .video-player-box iframe {
+    top: 50px;
+  }
+}
+.video-player-box{
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/video-player-box.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.video-player-box img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/video-player-box.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+}
+.video-player-box img:active{
+  display: none;
+}
+.video-player-box iframe{
+  position: absolute;
+  vertical-align: top;
+}
+
+.video-title{
+    margin: 40px 0 0px !important;
+    border-bottom: none !important;
+}
+.video-title h4{
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.video-page .row div fieldset{
+  border-top:1px solid #eee; 
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.video-page .row div fieldset legend{
+  margin-bottom: 0px !important;
+  text-align: right;
+  border-bottom: none;
+  width: auto;
+}
+.video-page .row div .share-u,.group-huodong-sidebar .share-u a{
+  font-size: 12px;
+  color: #999;
+}
+.video-page .row div .share-u a i{
+  font-size: 18px;
+  color: #999;
+}
+.video-page .row div .share-u a{
+  cursor: pointer;
+}
+
+.video-editor{
+  color: #ce6a77;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.video-article{
+  margin-top: 20px;
+  color: #787878;
+}
+.video-article p{
+    font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-indent: 2em;
+}
+.college-video-sidebar .page-header h5 a.more-college-video {
+  display: block;
+  float: right;
+  font-size: 14px;
+  color: #4A90E2;
+}
+/*学院教程视频详情结束*/
+
+/*登录弹出层*/
+.college-login-box{
+  z-index: 1000000 !important;
+}
+.college-login-box .modal-dialog{
+  margin: 10% auto;
+}
+
+.college-login-box .modal-dialog .modal-content .modal-body form .form-group input{
+  border:1px solid #e5e5e5;
+}
+
+/*注册条款弹出层*/
+.college-agreement-box{
+  z-index: 1000000 !important;
+}
+.college-agreement-box .modal-dialog{
+  margin: 10% auto;
+}
+
+.college-agreement-box .modal-dialog .modal-content .modal-body form .form-group input{
+  border:1px solid #e5e5e5;
+}
+.college-agreement-box .modal-dialog .modal-content .modal-body p{
+  color: #666;
+  text-align: left;
+}
+
+/*页码*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #666 !important;
+  border-color: #666 !important;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span{
+  border-top-left-radius: 17px !important;
+  border-bottom-left-radius: 17px !important;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+  border-top-right-radius: 17px !important;
+  border-bottom-right-radius: 17px !important;
+}
+/*页码结束*/
+
+footer{
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ACACAC;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>创业学院</title>
+
+		<link href="css/college.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+		<![endif]-->
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+
+        <link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
+
+	</head>
+<body >
+	<nav class="navbar navbar-default">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><i class="iconfont">&#xe601;</i></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="service_index.html">创业服务</a></li>
+					<li><a href="group_index.html">创业圈子</a></li>
+					<li><a class="active" href="college_index.html">创业学院</a></li>
+					<li><a href="studio_index.html">创客之家</a></li>
+					<li><a href="meeting_index.html">创交会</a></li>
+					<!-- <li><a href="shenzhen_index.html">创业深圳</a></li> -->
+					<li><a href="login_index.html">会员中心</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-search" type="button"><i class="iconfont">&#xe603;</i></button>
+							</span>
+						</div><!-- /input-group -->
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+<div class="jumbotron"></div>
+	<div class="container">
+		<!-- <div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8 college-top">
+				<div class="jumbotron college-banner">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 college-top">
+				<div  id='calendar' class="college-data"></div>
+			</div>
+		</div> -->
+		<div class="row message web-font">
+			<i class="iconfont">&#xe600;</i> Surface Pro 3 具有 12 寸显示器，外形轻巧灵活，能提供笔记本电脑的功能。
+		</div>
+
+		<div class="row college-navbar">
+			<div class="dropdown college-dropdown-left">
+				<button class="btn college-navbar-btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					<i class="iconfont">&#xe60d;</i> 活动状态
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">全部活动</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">即将开始</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">正在进行</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">已经结束</a></li>
+				</ul>
+			</div>
+			<div class="dropdown college-dropdown-left">
+				<button class="btn college-navbar-btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					<i class="iconfont">&#xe60d;</i> 活动类型
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">全部</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">沙龙</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">讲座</a></li>
+				</ul>
+			</div>
+
+			<div class="dropdown college-dropdown-right">
+				<div class="btn-group" role="group" aria-label="...">
+				  <button type="button" class="btn college-btn-default" data-toggle="modal" data-target="#login">登录</button>
+				  <button type="button" class="btn college-btn-default" data-toggle="modal" data-target="#agreement">注册</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- login -->
+		<div class="modal fade college-login-box" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">登录</h4>
+		      </div>
+		      <div class="modal-body">
+				<form class="form-horizontal">
+				  <div class="form-group">
+				    <label for="inputEmail3" class="col-sm-2 control-label">账户</label>
+				    <div class="col-sm-9">
+				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				    </div>
+				    <div class="col-sm-1"></div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				    </div>
+				    <div class="col-sm-1"></div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox"> 下次自动登录
+				        </label>
+				      </div>
+				    </div>
+				  </div>
+				</form>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-default" data-dismiss="modal">注册</a>
+		        <button type="button" class="btn btn-primary">登录系统</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- agreement -->
+		<div class="modal fade college-agreement-box" id="agreement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">条款声明</h4>
+					</div>
+					<div class="modal-body">
+						<p><small>注册即表示，你同意服务条款以及隐私条款，包括Cookie使用隐私条款. 其他人则可以通过你提供的邮箱地址或者电话号码找到你。</small></p>
+						<p><small>本站所有解释权归深圳职业技术学院所有</small></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signup"
+								onclick="javascript:window.location.href='signup_index.html' ">同意注册条款并开始注册</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row college-index">
+			<div class="col-xs-12 col-sm-8 col-md-8">
+				<div class="college-huodong-list">
+					<a href="college_huodong_article.html" class="thumbnail">
+						<div class="huodong-type">沙龙</div>
+						<img src="images/item-1.jpg" alt="...">
+						<div class="caption">
+							<h3>《太阳看起来圆圆的》 万晓利新专辑首发巡演深圳站 @B10现场</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+							<div class="college-huodong-info">
+			        			<p><i class="iconfont">&#xe610;</i> 03月12日 ~ 04月18日 每天10:00-21:30</p>
+			        			<p><i class="iconfont">&#xe60f;</i> 深圳·南山区华侨城OCT创意园开平街2号G2栋一楼 景德瑞瓷馆（开平街与香山东街交汇处东侧）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-huodong-list">
+					<a href="college_huodong_article.html" class="thumbnail">
+						<div class="huodong-type">讲座</div>
+						<img src="images/item-2.jpg" alt="...">
+						<div class="caption">
+							<h3>《太阳看起来圆圆的》 万晓利新专辑首发巡演深圳站 @B10现场</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+							<div class="college-huodong-info">
+			        			<p><i class="iconfont">&#xe610;</i> 03月12日 ~ 04月18日 每天10:00-21:30</p>
+			        			<p><i class="iconfont">&#xe60f;</i> 深圳·南山区华侨城OCT创意园开平街2号G2栋一楼 景德瑞瓷馆（开平街与香山东街交汇处东侧）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-huodong-list">
+					<a href="college_huodong_article.html" class="thumbnail">
+						<div class="huodong-type">讲座</div>
+						<img src="images/item-3.jpg" alt="...">
+						<div class="caption">
+							<h3>《太阳看起来圆圆的》 万晓利新专辑首发巡演深圳站 @B10现场</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+							<div class="college-huodong-info">
+			        			<p><i class="iconfont">&#xe610;</i> 03月12日 ~ 04月18日 每天10:00-21:30</p>
+			        			<p><i class="iconfont">&#xe60f;</i> 深圳·南山区华侨城OCT创意园开平街2号G2栋一楼 景德瑞瓷馆（开平街与香山东街交汇处东侧）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-huodong-list">
+					<a href="college_huodong_article.html" class="thumbnail">
+						<div class="huodong-type">沙龙</div>
+						<img src="images/item-4.jpg" alt="...">
+						<div class="caption">
+							<h3>《太阳看起来圆圆的》 万晓利新专辑首发巡演深圳站 @B10现场</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+							<div class="college-huodong-info">
+			        			<p><i class="iconfont">&#xe610;</i> 03月12日 ~ 04月18日 每天10:00-21:30</p>
+			        			<p><i class="iconfont">&#xe60f;</i> 深圳·南山区华侨城OCT创意园开平街2号G2栋一楼 景德瑞瓷馆（开平街与香山东街交汇处东侧）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-huodong-list">
+					<a href="college_huodong_article.html" class="thumbnail">
+						<div class="huodong-type">沙龙</div>
+						<img src="images/item-5.jpg" alt="...">
+						<div class="caption">
+							<h3>《太阳看起来圆圆的》 万晓利新专辑首发巡演深圳站 @B10现场</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+							<div class="college-huodong-info">
+			        			<p><i class="iconfont">&#xe610;</i> 03月12日 ~ 04月18日 每天10:00-21:30</p>
+			        			<p><i class="iconfont">&#xe60f;</i> 深圳·南山区华侨城OCT创意园开平街2号G2栋一楼 景德瑞瓷馆（开平街与香山东街交汇处东侧）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 college-index-sidebar">
+				<div class="page-header">
+					<h5><i class="iconfont">&#xe611;</i> 视频教程
+						<a href="college_shipin.html" class="more-college-video">more</a>
+					</h5>
+				</div>
+				<div class="college-index-sidebar-list">
+					<a class="thumbnail">
+						<div class="college-video-img"></div>
+						<img src="images/item-5.jpg" alt="...">
+						<div class="caption">
+							<h6>揭秘微博和博客营销，独家绝密实操技术！</h6>
+							<p>从零开始掌握，打造自己的品牌！</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-index-sidebar-list">
+					<a class="thumbnail">
+						<div class="college-video-img"></div>
+						<img src="images/item-4.jpg" alt="...">
+						<div class="caption">
+							<h6>新淘宝店铺三个月盈利怎么做？</h6>
+							<p>学习了解如何获取流量，成交客户。做一家赚钱的网店</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-index-sidebar-list">
+					<a class="thumbnail">
+						<div class="college-video-img"></div>
+						<img src="images/item-3.jpg" alt="...">
+						<div class="caption">
+							<h6>影楼人像后期处理/PS速成</h6>
+							<p>通过几个实用的案例，来了解影楼人像的过程。</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="college-index-sidebar-list">
+					<a class="thumbnail">
+						<div class="college-video-img"></div>
+						<img src="images/item-2.jpg" alt="...">
+						<div class="caption">
+							<h6>工业企业成本核算全套</h6>
+							<p>通过本课程的学习熟练掌握工业企业全套核算的理论和实务操作</p>
+						</div>
+					</a>
+				</div>
+
+				<div  id='calendar' class="college-data"></div>
+			</div>
+		</div>
+
+
+		<nav>
+			<ul class="pagination">
+				<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+				<li class="active">
+					<a href="#">1 <span class="sr-only">(current)</span></a>
+				</li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<footer>Copyright©2015 SHENZHEN QFH CO.| 粤ICP备15013741号-4
+		</footer>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stickUp.min.js"></script>
+            <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar').stickUp();
+                });
+              });
+
+            </script>
+
+  </body>
+
+<script src='js/fullcalendar.min.js'></script>
+<script type="text/javascript">
+$(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			firstDay:1,
+			editable: true,
+			timeFormat: 'H:mm',
+			axisFormat: 'H:mm',
+			events: [
+				{
+					title: '全天计划\r\n#####\r\n写代码',
+					start: new Date(y, m, 1)
+				},
+				// {
+				// 	title: '张家界四日游',
+				// 	start: new Date(y, m, d-5),
+				// 	end: new Date(y, m, d-2)
+				// },
+				// {
+				// 	id: 999,
+				// 	title: '电话回访客户',
+				// 	start: new Date(y, m, d-6, 16, 0),
+				// 	allDay: false
+				// },
+				// {
+				// 	id: 999,
+				// 	title: '电话回访客户',
+				// 	start: new Date(y, m, d+4, 16, 0),
+				// 	allDay: false
+				// },
+				// {
+				// 	title: '视频会议',
+				// 	start: new Date(y, m, d, 10, 30),
+				// 	allDay: false
+				// },
+				// {
+				// 	title: '中秋放假',
+				// 	start: '2013-09-19',
+				// 	end: '2013-09-21',
+				// },
+				// {
+				// 	title: '午饭',
+				// 	start: new Date(y, m, d, 12, 0),
+				// 	end: new Date(y, m, d, 14, 0),
+				// 	allDay: false
+				// },
+				// {
+				// 	title: '生日聚会',
+				// 	start: new Date(y, m, d+1, 19, 0),
+				// 	end: new Date(y, m, d+1, 22, 30),
+				// 	allDay: false
+				// },
+				// {
+				// 	title: '访问Helloweba主页',
+				// 	start: new Date(y, m, 28),
+				// 	end: new Date(y, m, 29),
+				// 	url: 'http://helloweba.com/'
+				// },
+				// {
+				// 	title: '实战训练课',
+				// 	start: new Date(y, m, d+23)
+				// },
+			]
+		});
+		
+	});
+</script>
+</html>

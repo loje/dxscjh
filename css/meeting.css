@@ -1,0 +1,305 @@
+/*开源字体*/
+@font-face {font-family: 'webfontcn';
+    src: url('../fonts/webfont.eot'); /* IE9*/
+    src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font{
+    font-family:"webfontcn" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/*开源字体结束*/
+
+/*开源矢量图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*开源矢量图标结束*/
+.container{
+  margin-top: 0px !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.body-bg{
+  background-image: url(../images/world_background.jpg); background-position: center 0;
+}
+
+.btn-search {
+  color: #fff;
+  background-image: url(../images/50_search-bg.png);
+  
+  border-color: #ccc;
+}
+
+.banner-title{
+	position: absolute;
+	bottom: 10px;
+	padding: 5px;
+	/*width: 470px;*/
+	height: 110px;
+	background-image: url(../images/75_bg.png);
+}
+	.banner-title h3{
+		color: #CC9966;
+		letter-spacing:5px;
+	}
+	.banner-title h5{
+		color: #A0A0A0;
+	}
+.message{
+	padding: 12px 0 0px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #A0A0A0;
+}
+
+
+/*创新创业交流会首页*/
+.meeting-index-top{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  height: 60px;
+}
+.meeting-index-logo{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  height: 60px;
+  background-image: url(../images/ssb_logo.png);
+  background-repeat: no-repeat;
+  
+}
+.meeting-index-nav{
+  margin-top: 20px;
+}
+.meeting-index-nav ul {
+  float: right;
+}
+.meeting-index-nav ul li a{
+  padding: 0px 0px;
+  margin: 10px 5px;
+  color: #999;
+  border-bottom: 4px solid #fff;
+}
+.meeting-index-nav ul li a:hover{
+  color: #94ABC6 !important;
+  border-bottom: 4px solid #94ABC6;
+  background-color: transparent;
+
+}
+.meeting-index-nav ul li a.active{
+  color: #3F6490 !important;
+  border-bottom: 4px solid #3F6490;
+}
+
+.meeting-banner{
+  background-image: url(../images/meeting_banner.jpg) !important;
+  background-position: center;
+}
+
+.meeting-index-page{
+  margin-top: 50px;
+}
+.meeting-index-intro p{
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #777;
+  margin: 0 0 20px;
+}
+.meeting-index-sidebar p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.meeting-index-sidebar p a{
+  font-size: 12px;
+  color: #0078D7;
+}
+/*创新创业交流会首页结束*/
+
+/*大会日程*/
+.meeting-schedule-page{
+  margin-top: 40px;
+}
+.meeting-schedule-page table{
+  text-align: center;
+}
+
+.meeting-schedule-page table tbody tr:first-child{
+  background-color: #3F6490;
+  color: #fff;
+}
+
+.overdue{
+  color: #ccc;
+  background-image: url(../images/no.png);
+}
+/*大会日程结束*/
+
+/*参会媒体*/
+@media (max-width: 640px){
+  .meeting-institutions-menber .thumbnail .caption h4{
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 768px){
+  .meeting-institutions-menber .thumbnail .caption h4{
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px){}
+/*参会媒体结束*/
+
+/*参会机构*/
+.meeting-institutions-page{
+  margin-top: 50px;
+}
+.meeting-institutions-menber-list h2{
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.meeting-institutions-menber .thumbnail{
+  border: none;
+}
+.meeting-institutions-menber .thumbnail img{
+  border: 1px solid #ddd;
+  border-radius: 102px;
+}
+.meeting-institutions-menber .thumbnail .caption h4{
+  margin-top: 20px;
+  height: 40px;
+  text-align: center;
+
+}
+/*参会机构结束*/
+
+/*参会项目*/
+.meeting-item{
+  margin-top: 60px !important;
+}
+.meeting-item-list {
+  width: 100% !important;
+  float: left;
+  margin-bottom: 20px;
+}
+.meeting-item-list i, .meeting-item-list h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3f6490 !important;
+  font-size: 14px;
+}
+.meeting-items-data {
+  float: right;
+}
+.meeting-item-excerpts {
+  color: #A0A0A0;
+  font-family: "webfontcn";
+  font-size: 13px;
+  padding-left: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+/*参会项目结束*/
+
+/*服务机构*/
+.tec-intro-title {
+  position: relative;
+}
+.tec-intro-title h3 {
+  font-size: 18px;
+  color: #3F6490;
+}
+.tec-intro-title h3 .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tec-intro-breadcrumb-nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.tec-intro-breadcrumb-nav ol {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  color: #A0A0A0 !important;
+  background-color: transparent;
+}
+.tec-intro-breadcrumb-nav ol a {
+  color: #A0A0A0 !important;
+}
+.page-article p {
+  margin: 0 0 20px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.share-u {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  text-align: right;
+  color: #A0A0A0;
+}
+.share-u a {
+  color: #A0A0A0;
+}
+.share-u a i.iconfont {
+  font-size: 24px !important;
+}
+
+/*服务机构结束*/
+
+/*页码*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #666 !important;
+  border-color: #666 !important;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span{
+  border-top-left-radius: 17px !important;
+  border-bottom-left-radius: 17px !important;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+  border-top-right-radius: 17px !important;
+  border-bottom-right-radius: 17px !important;
+}
+/*页码结束*/
+footer{
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ACACAC;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>创客之家</title>
+
+		<link href="css/studio.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+		<![endif]-->
+
+    	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<body >
+	<nav class="navbar navbar-default">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><i class="iconfont">&#xe601;</i></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="service_index.html">创业服务</a></li>
+					<li><a href="group_index.html">创业圈子</a></li>
+					<li><a href="college_index.html">创业学院</a></li>
+					<li><a class="active" href="studio_index.html">创客之家</a></li>
+					<li><a href="meeting_index.html">创交会</a></li>
+					<!-- <li><a href="shenzhen_index.html">创业深圳</a></li> -->
+					<li><a href="login_index.html">会员中心</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-search" type="button"><i class="iconfont">&#xe603;</i></button>
+							</span>
+						</div><!-- /input-group -->
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="jumbotron"></div>
+	<div class="container">
+		<div class="row message">
+			<i class="iconfont">&#xe600;</i> Surface Pro 3 具有 12 寸显示器，外形轻巧灵活，能提供笔记本电脑的功能。
+		</div>
+
+		<div class="row studio-index">
+			<div class="col-xs-12 col-sm-8 col-md-8 studio-index-view">
+				<div class="studio-index-list">
+					<a href="studio_show.html" class="thumbnail">
+						<img src="images/item-2.jpg" alt="...">
+						<div class="caption">
+							<h3>工厂展示</h3>
+							<p>春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-2 col-md-2 studio-index-business">
+				<a href="#" data-toggle="modal" data-target="#reserve">
+					<img src="images/relation.jpg" alt="..." class="studio-index-business-pic">
+					<p class="text-muted">春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 </p>
+					<button class="reserve">预约参观</button>
+				</a>
+			</div>
+
+			<!-- 预约参观表单弹窗 -->
+			<div class="modal fade reservebox" id="reserve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">预约申请表</h4>
+			      </div>
+			      <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的尊姓大名">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">手机</label>
+					    <div class="col-sm-10">
+					      <input type="number" class="form-control" id="inputEmail3" placeholder="以便我们及时通知您">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">学校</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的所在学校">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">专业</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的所读专业">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">期望时间</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="datetimepicker" placeholder="我们会根据您所期望的时间段进行酌情安排">
+					    </div>
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        <button type="button" class="btn btn-primary">提交申请</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="col-xs-12 col-sm-2 col-md-2 studio-index-business">   
+				<a href="studio_item.html">
+					<img src="images/join_us.jpg" alt="..." class="studio-index-business-pic">
+					<p class="text-muted">春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 </p>
+					<button class="product">创客产品</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="row studio-index">
+			<div class="col-xs-12 col-sm-10 col-md-10 studio-index-view">
+				<div class="studio-index-list">
+					<a href="studio_huodong.html" class="thumbnail">
+						<img src="images/item-03.jpg" alt="...">
+						<div class="caption">
+							<h3>面包旅行&艺象iDTOWN国际艺术区之"生活美学"文博会专项活动</h3>
+							<p>新生于2013年的深圳东部海边艺象iD TOWN国际艺术区，迎来了文博会专项活动首秀，通过在园区满京华美术馆、六象盒子、Z gallery等艺术空间中举办的一系列公共活动阐述“生活美学丨旅行•选物•择度”的活动主题。</p>
+							<div class="studio-huodong-info">
+								<p><i class="iconfont">&#xe610;</i> 05月16日 ~ 08月12日 每天10:00-17:30</p>
+								<p><i class="iconfont">&#xe60f;</i> 深圳 龙岗区 大鹏葵鹏路106号（近官湖海滩）</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-2 col-md-2 studio-index-business">
+				<a href="#" data-toggle="modal" data-target="#hdapply">
+					<img src="images/relation.jpg" alt="..." class="studio-index-business-pic">
+					<p class="text-muted">春暖花开时，首次带乐队巡演，孤独的鸟儿再度整理羽毛，开始歌唱。 </p>
+					<button class="apply">活动报名</button>
+				</a>
+			</div>
+		</div>
+
+			<!-- 活动报名表单弹窗 -->
+			<div class="modal fade reservebox" id="hdapply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">活动报名申请</h4>
+			      </div>
+			      <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的尊姓大名">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">手机</label>
+					    <div class="col-sm-10">
+					      <input type="number" class="form-control" id="inputEmail3" placeholder="以便我们及时通知您">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">学校</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的所在学校">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">专业</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="您的所读专业">
+					    </div>
+					  </div>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        <button type="button" class="btn btn-primary">提交申请</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		<div class="row studio-index">
+			<div class="col-xs-12 col-sm-4 col-md-4 studio-index-service">
+				<a href="studio_3D.html">
+					<button>3D打印</button>
+					<img src="images/3d-img.png">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 studio-index-service">
+				<a href="studio_download.html">
+					<button>资料下载</button>
+					<img src="images/download-img.png">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 studio-index-service">
+				<a href="studio_tech.html">
+					<button>教程</button>
+					<img src="images/teching-img.png">
+				</a>
+			</div>
+		</div>
+
+		<footer>Copyright©2015 SHENZHEN QFH CO.| 粤ICP备15013741号-4
+		</footer>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stickUp.min.js"></script>
+            <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar').stickUp();
+                });
+              });
+
+            </script>
+
+  </body>
+</html>

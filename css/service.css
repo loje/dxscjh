@@ -1,0 +1,238 @@
+/*开源字体*/
+@font-face {font-family: 'webfontcn';
+    src: url('../fonts/webfont.eot'); /* IE9*/
+    src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font{
+    font-family:"webfontcn" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/*开源字体结束*/
+
+/*开源矢量图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*开源矢量图标结束*/
+
+body{
+  background-color: #f5f5f5;
+}
+
+.body-bg{
+  background-image: url(../images/world_background.jpg); background-position: center 0;
+}
+
+.btn-search {
+  color: #fff;
+  background-image: url(../images/50_search-bg.png);
+  
+  border-color: #ccc;
+}
+
+.banner-title{
+	position: absolute;
+	bottom: 10px;
+	padding: 5px;
+	/*width: 470px;*/
+	height: 110px;
+	background-image: url(../images/75_bg.png);
+}
+	.banner-title h3{
+		color: #CC9966;
+		letter-spacing:5px;
+	}
+	.banner-title h5{
+		color: #A0A0A0;
+	}
+.message{
+	padding: 12px 0 30px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #A0A0A0;
+}
+
+/*首页样式*/
+a.ser-intro img{
+-webkit-filter: grayscale(0%); 
+-moz-filter: grayscale(0%); 
+-ms-filter: grayscale(0%); 
+-o-filter: grayscale(0%); 
+filter: grayscale(0%); 
+filter: none; 
+}
+a.ser-intro img:hover{
+-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%); 
+-ms-filter: grayscale(100%); 
+-o-filter: grayscale(100%); 
+filter: grayscale(100%); 
+filter: gray; 
+}
+
+.ser-intro{
+  display: block; text-decoration: none;color: #000;
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 4px 20px !important;
+  }
+a.ser-intro:hover{ text-decoration: none;color: #000;cursor: pointer;}
+.ser-intro img{border-radius: 8px;width: 270px;
+  height: 180px;}
+
+.ser-intro .caption {
+  max-width: 270px;
+  margin: 0 auto;
+}
+.ser-intro .caption h3{
+  font-size: 20px;
+
+}
+.ser-intro .caption p{
+  line-height: 24px;
+  text-indent: 2em;
+  font-size: 14px;
+  color: #807F7F;
+}
+/*首页样式结束*/
+
+/*导师团队样式*/
+.ser-title{
+  position: relative;
+}
+.tec-intro{
+  display: block; text-decoration: none;color: #000;
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 4px 20px !important;
+  }
+a.tec-intro:hover{ text-decoration: none;color: #000;cursor: pointer;}
+.tec-intro img{border-radius: 8px;width: 180px;
+  height: 180px;}
+.tec-intro .caption h3{
+  width: 100%;
+  font-size: 18px;
+  color: #AA7139;
+  text-align: center;
+}
+.tec-intro .caption p{
+  width: 100%;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  color: #807F7F;
+}
+
+.tec-intro-breadcrumb-nav{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.tec-intro-breadcrumb-nav ol {
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+  color: #A0A0A0 !important;
+}
+
+.tec-intro-breadcrumb-nav ol a{
+  color: #A0A0A0 !important;
+}
+/*导师团队样式结束*/
+
+
+/*导师团队介绍*/
+.tec-intro-title{
+  position: relative;
+}
+.tec-intro-title h3{
+  font-size: 18px;
+  color: #AA7139;
+}
+.page-article p{
+  margin: 0 0 20px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.share-u{
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  text-align: right;
+  color: #A0A0A0;
+}
+.share-u a{
+  color: #A0A0A0;
+}
+.share-u a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #AA7139;
+}
+.share-u a i.iconfont{
+  font-size: 24px !important;
+}
+
+/*导师团队介绍结束*/
+
+/*创业政策列表+服务机构列表*/
+.ser-news-list{
+  width: 100% !important;
+  float: left;
+  margin-bottom: 20px;
+}
+.ser-news-list i,.ser-news-list h4{
+  color: #AA7139 !important;
+  font-size: 14px;
+}
+  .ser-news-data {
+  float: right;
+}
+  .ser-news-excerpts{
+    color: #A0A0A0;
+    font-family: "webfontcn";
+    font-size: 13px;
+    padding-left: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  a.chatqq{
+    display: inline-block;
+    padding: 6px 12px;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: url(../images/chatqq.jpg);
+  }
+  a.chatqq:hover{
+    box-shadow: 0px 0px 5px #999;
+  }
+/*创业政策列表+服务机构列表结束*/
+
+footer{
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ACACAC;
+}

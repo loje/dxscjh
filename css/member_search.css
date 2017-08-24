@@ -1,0 +1,121 @@
+/*开源字体*/
+@font-face {font-family: 'webfontcn';
+    src: url('../fonts/webfont.eot'); /* IE9*/
+    src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font{
+    font-family:"webfontcn" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/*开源字体结束*/
+
+/*开源矢量图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*开源矢量图标结束*/
+.member-search-window{
+  margin-top: 50px;
+}
+.member-search-sort{
+  margin-bottom: 50px;
+}
+.member-search-text{
+  padding-right: 0px !important;
+}
+.member-search-text input{
+  height: 40px;
+  border: 1px solid #2e6da4;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.member-search-but{
+  padding-left: 0px !important;
+}
+.member-search-but span.input-group-btn button{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #2e6da4;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.member-search-sort{
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.search-result-list{
+  margin: 20px 0;
+}
+.search-result-list a{
+  display: block;
+  padding: 4px;
+  color: #666;
+}
+
+
+
+.search-result-list a:hover{
+  background-color: #337ab7;
+  border-radius: 8px;
+  color: #fff;
+}
+.search-result-list .media .media-left{
+  border:1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.search-result-list .media .media-left img{
+  height: 100px;
+  width: 100px;
+}
+
+.search-result-list .media .media-body{
+  padding-left: 10px;
+}
+.search-result-list .media .media-body h4{
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.company-details p.img{
+  text-align: center;
+}
+
+.company-details p{
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #333;
+  text-indent: 2em;
+  margin: 0 0 20px;
+}
+
+footer{
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ACACAC;
+}
